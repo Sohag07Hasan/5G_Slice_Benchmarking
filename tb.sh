@@ -101,7 +101,26 @@ case $input_command in
     echo "Executing docker compose -f ./Servers/docker-compose-server.yaml logs --follow"
     docker compose -f ./Servers/docker-compose-server.yaml logs --follow
     ;;
-
+  "mon up")
+    echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml up.."
+    docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml up
+    ;;
+  "mon down")
+    echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml down.."
+    docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml down
+    ;;
+  "mon start")
+    echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml start.."
+    docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml start
+    ;;
+  "mon stop")
+    echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml stop.."
+    docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml stop
+    ;;
+  "mon logs")
+    echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml logs follow.."
+    docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml logs --follow
+    ;;
   "slice test")
     for slice_num in 1 2; do
       #Create a new Tmux window (tab) for each slice
