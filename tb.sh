@@ -138,7 +138,9 @@ case $input_command in
         ue_num=$((pane_id + 1))
         # Customize your command below instead of echo
         tmux send-keys -t ${pane_id} "docker exec -it ue${slice_num}${ue_num} bash" C-m
-        tmux send-keys -t ${pane_id} "ping -c 5 -I uesimtun0 8.8.8.8" C-m
+        tmux send-keys -t ${pane_id} "sh /data/default_route_update.sh" C-m
+        tmux send-keys -t ${pane_id} "ping -c 3 8.8.8.8" C-m
+        tmux send-keys -t ${pane_id} "ip route" C-m
       done
     done
     ;;    
