@@ -65,8 +65,6 @@ services:
         aliases:
           - server22
 
-
-
 networks:
   publicnet:  # Name of the new network
     external: true

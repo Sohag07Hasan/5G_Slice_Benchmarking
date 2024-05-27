@@ -46,8 +46,8 @@ services:
       securenet:  #public network to be connected to outside network
         ipv4_address: 10.10.10.20
         aliases:
-          - upf2
-      
+          - upf
+        
 
   # free5gc-upf3:
   #   container_name: upf3

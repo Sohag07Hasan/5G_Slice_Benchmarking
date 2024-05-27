@@ -121,6 +121,22 @@ case $input_command in
     echo "Executing ./Container-Monitoring/Container-Monitoring-Compose.yaml logs follow.."
     docker compose -f ./Container-Monitoring/Container-Monitoring-Compose.yaml logs --follow
     ;;
+  "suricata up")
+    echo "Executing ./Suricata/docker-compose-suricata.yaml up"
+    docker compose -f ./Suricata/docker-compose-suricata.yaml up
+    ;;
+  "suricata down")
+    echo "Executing ./Suricata/docker-compose-suricata.yaml down"
+    docker compose -f ./Suricata/docker-compose-suricata.yaml down
+    ;;
+  "suricata start")
+    echo "Executing ./Suricata/docker-compose-suricata.yaml start"
+    docker compose -f ./Suricata/docker-compose-suricata.yaml start
+    ;;
+  "suricata logs")
+    echo "Executing ./Suricata/docker-compose-suricata.yaml logs"
+    docker compose -f ./Suricata/docker-compose-suricata.yaml logs --follow
+    ;;
   "slice test")
     for slice_num in 1 2; do
       #Create a new Tmux window (tab) for each slice

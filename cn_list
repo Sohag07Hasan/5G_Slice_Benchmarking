@@ -1,0 +1,39 @@
+Executing docker ps -a --format table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}
+NAMES                                 IMAGE                              STATUS                      CREATED
+smf                                   free5gc/smf:v3.3.0                 Up 18 minutes               21 minutes ago
+smf2                                  free5gc/smf:v3.3.0                 Up 18 minutes               21 minutes ago
+upf2                                  free5gc/upf:v3.3.0                 Up 18 minutes               21 minutes ago
+suricata_1                            jasonish/suricata:latest           Exited (1) 14 hours ago     14 hours ago
+ue24                                  free5gc/ueransim:latest            Exited (255) 10 days ago    2 weeks ago
+ue13                                  free5gc/ueransim:latest            Exited (255) 10 days ago    2 weeks ago
+ue14                                  free5gc/ueransim:latest            Exited (255) 10 days ago    2 weeks ago
+ue23                                  free5gc/ueransim:latest            Exited (255) 10 days ago    2 weeks ago
+container-monitoring-prometheus-1     prom/prometheus:v2.46.0            Exited (255) 5 days ago     3 weeks ago
+server_12                             ubuntu-uofr:latest                 Exited (137) 14 hours ago   4 weeks ago
+server_22                             ubuntu-uofr:latest                 Exited (137) 14 hours ago   4 weeks ago
+server_11                             ubuntu-uofr:latest                 Exited (137) 14 hours ago   4 weeks ago
+server_21                             ubuntu-uofr:latest                 Exited (137) 14 hours ago   4 weeks ago
+ue22                                  free5gc/ueransim:latest            Exited (255) 10 days ago    4 weeks ago
+ue12                                  free5gc/ueransim:latest            Exited (255) 10 days ago    4 weeks ago
+ue21                                  free5gc/ueransim:latest            Exited (255) 10 days ago    4 weeks ago
+ue11                                  free5gc/ueransim:latest            Exited (255) 10 days ago    4 weeks ago
+container-monitoring-grafana-1        grafana/grafana:10.0.3             Exited (255) 5 days ago     6 weeks ago
+container-monitoring-cadvisor-1       gcr.io/cadvisor/cadvisor:v0.47.2   Exited (255) 5 days ago     6 weeks ago
+container-monitoring-nodeexporter-1   prom/node-exporter:v1.6.1          Exited (255) 5 days ago     6 weeks ago
+ue32                                  free5gc/ueransim:latest            Exited (0) 6 weeks ago      7 weeks ago
+ue31                                  free5gc/ueransim:latest            Exited (0) 6 weeks ago      7 weeks ago
+ueransim-gnb31                        free5gc/ueransim:latest            Exited (0) 6 weeks ago      7 weeks ago
+smf3                                  free5gc/smf:v3.3.0                 Exited (0) 6 weeks ago      7 weeks ago
+upf3                                  free5gc/upf:v3.3.0                 Exited (0) 6 weeks ago      7 weeks ago
+ueransim-gnb11                        free5gc/ueransim:latest            Exited (255) 10 days ago    8 weeks ago
+ueransim-gnb21                        free5gc/ueransim:latest            Exited (255) 10 days ago    8 weeks ago
+udr                                   free5gc/udr:v3.3.0                 Up 18 minutes               8 weeks ago
+ausf                                  free5gc/ausf:v3.3.0                Up 18 minutes               8 weeks ago
+pcf                                   free5gc/pcf:v3.3.0                 Up 18 minutes               8 weeks ago
+amf                                   free5gc/amf:v3.3.0                 Up 18 minutes               8 weeks ago
+nssf                                  free5gc/nssf:v3.3.0                Up 18 minutes               8 weeks ago
+chf                                   free5gc/chf                        Up 18 minutes               8 weeks ago
+udm                                   free5gc/udm:v3.3.0                 Up 18 minutes               8 weeks ago
+nrf                                   free5gc/nrf:v3.3.0                 Up 18 minutes               8 weeks ago
+webui                                 free5gc/webui:v3.3.0               Up 18 minutes               8 weeks ago
+mongodb                               mongo:4.4.15                       Up 18 minutes               8 weeks ago
