@@ -1,3 +1,6 @@
+#it grab traffic at vxlan interface which is mirrored from upf
+#It decodes the GTP header and forward this traffic to a new dummy interface dummy0
+
 from scapy.all import *
 from scapy.contrib.gtp import GTP_U_Header
 

@@ -20,4 +20,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 EXPOSE 4500/udp 514/udp
 
 # Set default CMD
-CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "-i", "eth0"]
+#CMD ["suricata", "-c", "/etc/suricata/suricata.yaml", "-i", "eth0"]

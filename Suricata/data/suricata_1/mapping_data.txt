@@ -1,0 +1,2 @@
+SmContext: urn:uuid:f4db3548-873f-4c59-b1b8-ed38f7445feb	ip: 10.60.0.4	Supi: imsi-208930000000001
+SmContext: urn:uuid:666c7943-1bfa-4a6b-8f1e-77ef7094d5b3	ip: 10.60.0.2	Supi: imsi-208930000000003

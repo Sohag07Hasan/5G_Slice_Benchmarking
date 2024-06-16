@@ -15,7 +15,7 @@ suricata-version: "7.0"
 vars:
   # more specific is better for alert accuracy and performance
   address-groups:
-    HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
+    HOME_NET: "[10.60.0.0/24,10.61.0.0/24]"
     #HOME_NET: "[192.168.0.0/16]"
     #HOME_NET: "[10.0.0.0/8]"
     #HOME_NET: "[172.16.0.0/12]"
@@ -612,11 +612,11 @@ logging:
 
 # Linux high speed capture support
 af-packet:
-  - interface: eth0
+  - interface: dummy0
     # Number of receive threads. "auto" uses the number of cores
     #threads: auto
     # Default clusterid. AF_PACKET will load balance packets based on flow.
-    cluster-id: 99
+    cluster-id: 98
     # Default AF_PACKET cluster type. AF_PACKET can load balance per flow or per hash.
     # This is only supported for Linux kernel > 3.1
     # possible value are:
@@ -1936,7 +1936,7 @@ capture:
 #
 netmap:
    # To specify OS endpoint add plus sign at the end (e.g. "eth0+")
- - interface: eth2
+ - interface: dummy0
    # Number of capture threads. "auto" uses number of RSS queues on interface.
    # Warning: unless the RSS hashing is symmetrical, this will lead to
    # accuracy issues.
@@ -2151,7 +2151,8 @@ napatech:
 default-rule-path: /var/lib/suricata/rules
 
 rule-files:
-  - suricata.rules
+  #- suricata.rules
+  - detect-ddos.rules
 
 ##
 ## Auxiliary configuration files.
